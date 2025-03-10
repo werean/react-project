@@ -27,7 +27,12 @@ export default createGlobalStyle`
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: 700;
+    transition: all 300ms
   }
+
+button:hover {
+  filter: brightness(75%)
+}
 
   a{
     text-decoration: none;
@@ -40,10 +45,13 @@ export default createGlobalStyle`
 
 `;
 export const Container = styled.section`
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
   background: #343b3f;
   margin: 30px auto;
-  padding: 30px;
+  padding: 50px;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
